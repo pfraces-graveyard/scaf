@@ -1,4 +1,4 @@
-# Tpl
+# Plat
 
 Template-based scaffolding tool
 
@@ -9,7 +9,7 @@ Process files content with **visionmedia**'s `ejs`
 Create a template to be used and a target destination
 
 ```sh
-mkdir -p ~/.tpl/my-template/{foo,bar}
+mkdir -p ~/.plat/my-template/{foo,bar}
 mkdir ~/hello
 ```
 
@@ -18,24 +18,24 @@ Add some `ejs` templates
 ```sh
 cat <<EOF
 Hello <%- name %>!
-EOF > ~/.tpl/my-template/foo/hello
+EOF > ~/.plat/my-template/foo/hello
 ```
 
 ```sh
 cat <<EOF
 Created <%- now %>
 By <%- name %>
-EOF > ~/.tpl/my-template/bar/created
+EOF > ~/.plat/my-template/bar/created
  ```
 
-Now we can use `tpl` package directly from JavaScript
+Now we can use `plat` package directly from JavaScript
 
 **script.js**
 
 ```js
-var tpl = require('tpl');
+var plat = require('plat');
 
-tpl('my-template', {
+plat('my-template', {
     name: 'pfraces',
     now: new Date()
 }).scaffold('~/hello');
@@ -48,7 +48,7 @@ node script.js
 Or from its CLI included
 
 ```sh
-tpl --template my-template --scaffold ~/hello --name pfraces --now $(date)
+plat --template my-template --scaffold ~/hello --name pfraces --now $(date)
 ```
 
 Tada!
@@ -78,7 +78,7 @@ cat ~/hello/bar/created
 
 # Installation
 
-    npm install [-g] tpl
+    npm install [-g] plat
 
 # Motivation
 

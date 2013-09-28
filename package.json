@@ -1,0 +1,26 @@
+{
+    "name": "plat",
+    "version": "0.1.0",
+    "description": "Template-based scaffolding tool",
+    "main": "plat.js",
+    "bin": {
+        "plat": "plat-cli.js"
+    },
+    "dependencies": {
+        "ejs": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://pfraces@github.com/pfraces/plat"
+    },
+    "keywords": [
+        "template",
+        "scaffolding",
+        "bootstrap"
+    ],
+    "author": "pfraces",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/pfraces/plat/issues"
+    }
+}
