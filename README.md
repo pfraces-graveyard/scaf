@@ -82,7 +82,7 @@ cat ~/hello/bar/created
 
 # Motivation
 
-I've been frustrated trying to use `grunt-init` from JavaScript:
+I've been frustrated using `grunt-init` from JavaScript:
 
 *   No JavaScript API provided, just CLI
 *   Unable to apply defaults without prompting
