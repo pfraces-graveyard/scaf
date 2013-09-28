@@ -35,10 +35,10 @@ Now we can use `tpl` package directly from JavaScript
 ```js
 var tpl = require('tpl');
 
-tpl('my-template').scaffold('~/hello', {
+tpl('my-template', {
     name: 'pfraces',
     now: new Date()
-});
+}).scaffold('~/hello');
 ```
 
 ```sh
@@ -48,7 +48,7 @@ node script.js
 Or from its CLI included
 
 ```sh
-tpl my-template --scaffold ~/hello --name pfraces --now $(date)
+tpl --template my-template --scaffold ~/hello --name pfraces --now $(date)
 ```
 
 Tada!
