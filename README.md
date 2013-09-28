@@ -54,23 +54,26 @@ tpl my-template --scaffold ~/hello --name pfraces --now $(date)
 Tada!
 
 ```sh
-cd ~/hello
-ls -la
+find ~/hello
 ```
 
-**[TODO]** *output here*
+> /home/pfraces/hello  
+  /home/pfraces/hello/foo  
+  /home/pfraces/hello/foo/hello  
+  /home/pfraces/hello/bar  
+  /home/pfraces/hello/bar/created
 
 ```sh
-cat foo/hello
+cat ~/hello/foo/hello
 ```
 
 > Hello pfraces!
 
 ```sh
-cat bar/created
+cat ~/hello/bar/created
 ```
 
-> Created Sat Sep 28 2013 19:15:00 GMT+0200 (CEST)
+> Created Sat Sep 28 2013 19:15:00 GMT+0200 (CEST)  
   By pfraces
 
 # Installation
