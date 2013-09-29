@@ -16,16 +16,16 @@ mkdir ~/hello
 Add some `ejs` templates
 
 ```sh
-cat <<EOF
+cat > ~/.plat/my-template/foo/hello <<EOF
 Hello <%- name %>!
-EOF > ~/.plat/my-template/foo/hello
+EOF
 ```
 
 ```sh
-cat <<EOF
+cat > ~/.plat/my-template/bar/created <<EOF
 Created <%- now %>
 By <%- name %>
-EOF > ~/.plat/my-template/bar/created
+EOF
  ```
 
 Now we can use `plat` package directly from JavaScript
