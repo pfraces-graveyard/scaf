@@ -26,19 +26,19 @@ cat > ~/.plat/my-template/bar/created <<EOF
 Created <%- now %>
 By <%- name %>
 EOF
- ```
+```
 
 Now we can use `plat` package directly from JavaScript
 
 **script.js**
 
 ```js
-var plat = require('plat');
+var scaf = require('scaf');
 
-plat('my-template', {
+scaf('my-template', {
     name: 'pfraces',
     now: new Date()
-}).scaffold('~/hello');
+}).fold('~/hello');
 ```
 
 ```sh
@@ -48,7 +48,7 @@ node script.js
 Or from its CLI included
 
 ```sh
-plat --template my-template --scaffold ~/hello --name pfraces --now $(date)
+scaf --template my-template --fold ~/hello --name pfraces --now $(date)
 ```
 
 Tada!
@@ -78,7 +78,7 @@ cat ~/hello/bar/created
 
 # Installation
 
-    npm install [-g] plat
+    npm install [-g] scaf
 
 # Motivation
 
