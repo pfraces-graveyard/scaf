@@ -1,4 +1,4 @@
-# Plat
+# Scaf
 
 Template-based scaffolding tool
 
@@ -6,29 +6,28 @@ Process files content with **visionmedia**'s `ejs`
 
 # Usage
 
-Create a template to be used and a target destination
+## Create a template
 
 ```sh
-mkdir -p ~/.plat/my-template/{foo,bar}
-mkdir ~/hello
+mkdir -p ~/.scaf/my-template/{foo,bar}
 ```
 
 Add some `ejs` templates
 
 ```sh
-cat > ~/.plat/my-template/foo/hello <<EOF
+cat > ~/.scaf/my-template/foo/hello <<EOF
 Hello <%- name %>!
 EOF
 ```
 
 ```sh
-cat > ~/.plat/my-template/bar/created <<EOF
+cat > ~/.scaf/my-template/bar/created <<EOF
 Created <%- now %>
 By <%- name %>
 EOF
 ```
 
-Now we can use `plat` package directly from JavaScript
+Now we can use `scaf` package directly from JavaScript
 
 **script.js**
 
