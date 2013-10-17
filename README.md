@@ -2,7 +2,8 @@
 
 Template-based scaffolding tool
 
-Process files content with **visionmedia**'s `ejs`
+Process files in a template directory recursively with **visionmedia**'s
+[ejs][1]
 
 # Usage
 
@@ -89,3 +90,13 @@ I've been frustrated using `grunt-init` from JavaScript:
 
 After a quick search, I didn't find a directory scaffolding JS library, so here
 we are!
+
+# Dependencies
+
+*   [ejs][1]
+*   [walk][2]
+*   [shelljs][3]
+
+[1]: https://github.com/visionmedia/ejs
+[2]: https://github.com/coolaj86/node-walk
+[3]: https://github.com/arturadib/shelljs

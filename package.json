@@ -1,17 +1,20 @@
 {
-    "name": "plat",
+    "name": "scaf",
     "version": "0.1.0",
     "description": "Template-based scaffolding tool",
-    "main": "plat.js",
+    "main": "scaf.js",
     "bin": {
-        "plat": "plat-cli.js"
+        "scaf": "scaf-cli.js"
     },
     "dependencies": {
-        "ejs": "*"
+        "shelljs": "*",
+        "walk": "*",
+        "ejs": "*",
+        "clide": "*"
     },
     "repository": {
         "type": "git",
-        "url": "https://pfraces@github.com/pfraces/plat"
+        "url": "https://pfraces@github.com/pfraces/scaf"
     },
     "keywords": [
         "template",
@@ -21,6 +24,6 @@
     "author": "pfraces",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/pfraces/plat/issues"
+        "url": "https://github.com/pfraces/scaf/issues"
     }
 }
